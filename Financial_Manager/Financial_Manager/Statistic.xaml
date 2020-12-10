@@ -1,0 +1,40 @@
+﻿<Window x:Class="Financial_Manager.Statistic"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Financial_Manager"
+        mc:Ignorable="d"
+ Title="Login" Height="530" Width="867">
+    <Grid Background="#FF7B7B87" Height="500">
+        <Border BorderBrush="Black" BorderThickness="0" Height="60" Width="867" Background="#FF404042" Margin="0" VerticalAlignment="Top" HorizontalAlignment="Left">
+            <Label Content="Financial Accounting" FontWeight="Bold" FontSize="13" VerticalAlignment="Top" Margin="80,17,643,0" Height="32"/>
+        </Border>
+        <Label Content="Financial Summary by Period" FontWeight="Bold" FontSize="20" VerticalAlignment="Top" Margin="285,83,0,0" HorizontalAlignment="Left" Width="286"/>
+        <Image HorizontalAlignment="Left" Height="48" VerticalAlignment="Top" Width="48" Margin="26,8,0,0" Source="Resources/logo.png"/>
+        <Label Content="Add Spending" HorizontalAlignment="Left" Margin="264,17,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="13"/>
+        <Label Content="Add Income" HorizontalAlignment="Left" Margin="374,17,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="13"/>
+        <Label Content="Show Statistics" HorizontalAlignment="Left" Margin="484,17,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="13"/>
+        <Image HorizontalAlignment="Left" Height="48" VerticalAlignment="Top" Width="48" Margin="782,8,0,0" Source="Resources/user.png"/>
+        <Label Content="0.00$" HorizontalAlignment="Left" Margin="689,13,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
+        <ComboBox HorizontalAlignment="Left" Margin="41,134,0,0" VerticalAlignment="Top" Width="91" Height="27" HorizontalContentAlignment="Center" FontSize="13">
+            <ComboBoxItem Content="Spending" IsSelected="True"/>
+            <ComboBoxItem Content="Income"/>
+        </ComboBox>
+        <Label Content="Start date:" HorizontalAlignment="Left" Margin="144,135,0,0" VerticalAlignment="Top" FontSize="13"/>
+        <DatePicker HorizontalAlignment="Left" Margin="213,135,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Content="End date:" HorizontalAlignment="Left" Margin="327,135,0,0" VerticalAlignment="Top" FontSize="13"/>
+        <DatePicker HorizontalAlignment="Left" Margin="390,135,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Content="Total expanse:" HorizontalAlignment="Left" Margin="527,135,0,0" VerticalAlignment="Top" FontSize="13"/>
+        <Label Content="0.00$" HorizontalAlignment="Left" Margin="619,135,0,0" VerticalAlignment="Top" FontSize="13"/>
+        <Label Content="Total income:" HorizontalAlignment="Left" Margin="680,135,0,0" VerticalAlignment="Top" FontSize="13"/>
+        <Label Content="0.00$" HorizontalAlignment="Left" Margin="767,135,0,0" VerticalAlignment="Top" FontSize="13"/>
+        <DataGrid HorizontalAlignment="Left" Height="198" Margin="30,202,0,0" VerticalAlignment="Top" Width="255">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Name(Category)" Width="150"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Amount" Width="110"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Window>
