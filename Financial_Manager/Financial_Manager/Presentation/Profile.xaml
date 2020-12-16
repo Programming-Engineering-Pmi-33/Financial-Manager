@@ -34,7 +34,7 @@
         <Label Content="Balance:" FontSize="13" VerticalAlignment="Top" Margin="260,208,0,0" HorizontalAlignment="Left"/>
         <Label Content="0.00$" FontSize="13" VerticalAlignment="Top" Margin="423,208,0,0" HorizontalAlignment="Left" Width="101" HorizontalContentAlignment="Center"/>
         <Label Content="Occupation:" FontSize="13" VerticalAlignment="Top" Margin="260,239,0,0" HorizontalAlignment="Left"/>
-        <TextBox HorizontalAlignment="Left" Height="27" Margin="423,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="101" FontSize="13" VerticalContentAlignment="Center"/>
+        <TextBox HorizontalAlignment="Left" Height="27" Margin="423,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="101" FontSize="13" VerticalContentAlignment="Center" TextChanged="TextBox_TextChanged"/>
         <Label Content="Currency:" FontSize="13" VerticalAlignment="Top" Margin="260,269,0,0" HorizontalAlignment="Left"/>
         <ComboBox HorizontalAlignment="Left" Margin="423,269,0,0" VerticalAlignment="Top" Width="101" Height="27" HorizontalContentAlignment="Center" FontSize="13">
             <ComboBoxItem Content="USD" IsSelected="True"/>
