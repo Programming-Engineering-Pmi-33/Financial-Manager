@@ -3,10 +3,29 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Financial_Manager"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Background="#FF7B7B87" Height="500" Margin="0,0,-51,-81">
+        <Border BorderBrush="Black" BorderThickness="0" Height="60" Width="867" Background="#FF404042" Margin="0" VerticalAlignment="Top" HorizontalAlignment="Left">
+            <Label Content="Financial Accounting" FontWeight="Bold" FontSize="13" VerticalAlignment="Top" Margin="80,17,643,0" Height="32"/>
+        </Border>
+        <Image HorizontalAlignment="Left" Height="48" VerticalAlignment="Top" Width="48" Margin="26,8,0,0" Source="Resources/logo.png"/>
+        <Label Content="Add Spending" HorizontalAlignment="Left" Margin="264,17,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="13"/>
+        <Label Content="Add Income" HorizontalAlignment="Left" Margin="374,17,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="13"/>
+        <Label Content="Show Statistics" HorizontalAlignment="Left" Margin="484,17,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="13"/>
+        <Image HorizontalAlignment="Left" Height="48" VerticalAlignment="Top" Width="48" Margin="782,8,0,0" Source="Resources/user.png"/>
+        <Label Content="0.00$" HorizontalAlignment="Left" Margin="689,13,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
+        <Label Content="Start date:" HorizontalAlignment="Left" Margin="262,88,0,0" VerticalAlignment="Top" FontSize="13"/>
+        <DatePicker HorizontalAlignment="Left" Margin="331,88,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Content="End date:" HorizontalAlignment="Left" Margin="445,88,0,0" VerticalAlignment="Top" FontSize="13"/>
+        <DatePicker HorizontalAlignment="Left" Margin="508,88,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="58,86,0,0" TextWrapping="Wrap" Text="Category List:" VerticalAlignment="Top" FontSize="24"/>
+        <ListBox Name="CategoryList" Margin="38,129,601,277">
+            <ListBoxItem>Category 1</ListBoxItem>
+            <ListBoxItem>Category 2</ListBoxItem>
+            <ListBoxItem>Category 3</ListBoxItem>
+            <ListBoxItem>Category 4</ListBoxItem>
+        </ListBox>
     </Grid>
 </Window>
