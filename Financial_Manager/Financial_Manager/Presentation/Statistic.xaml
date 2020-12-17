@@ -11,11 +11,11 @@
             <Label Content="Financial Accounting" FontWeight="Bold" FontSize="13" VerticalAlignment="Top" Margin="80,17,643,0" Height="32"/>
         </Border>
         <Label Content="Financial Summary by Period" FontWeight="Bold" FontSize="20" VerticalAlignment="Top" Margin="285,83,0,0" HorizontalAlignment="Left" Width="286"/>
-        <Image HorizontalAlignment="Left" Height="48" VerticalAlignment="Top" Width="48" Margin="26,8,0,0" Source="Resources/logo.png"/>
+        <Image HorizontalAlignment="Left" Height="48" VerticalAlignment="Top" Width="48" Margin="26,8,0,0" Source="../Resources/logo.png"/>
         <Label Content="Add Spending" HorizontalAlignment="Left" Margin="264,17,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="13"/>
         <Label Content="Add Income" HorizontalAlignment="Left" Margin="374,17,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="13"/>
         <Label Content="Show Statistics" HorizontalAlignment="Left" Margin="484,17,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="13"/>
-        <Image HorizontalAlignment="Left" Height="48" VerticalAlignment="Top" Width="48" Margin="782,8,0,0" Source="Resources/user.png"/>
+        <Image HorizontalAlignment="Left" Height="48" VerticalAlignment="Top" Width="48" Margin="782,8,0,0" Source="../Resources/user.png"/>
         <Label Content="0.00$" HorizontalAlignment="Left" Margin="689,13,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
         <ComboBox HorizontalAlignment="Left" Margin="41,134,0,0" VerticalAlignment="Top" Width="91" Height="27" HorizontalContentAlignment="Center" FontSize="13">
             <ComboBoxItem Content="Spending" IsSelected="True"/>
