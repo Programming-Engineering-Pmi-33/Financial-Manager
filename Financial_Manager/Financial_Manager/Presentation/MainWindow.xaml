@@ -3,10 +3,15 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Financial_Manager" 
+        xmlns:chartingToolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit"
         xmlns:sys="clr-namespace:System;assembly=mscorlib"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid Background="#FF7B7B87" Height="500" Margin="0,0,-51,-81">
+        <Grid.Resources>
+            <local:CategorySummary x:Key="CategorySummary" />
+        </Grid.Resources>
         <Border BorderBrush="Black" BorderThickness="0" Height="60" Width="867" Background="#FF404042" Margin="0" VerticalAlignment="Top" HorizontalAlignment="Left">
             <Label Content="Financial Accounting" FontWeight="Bold" FontSize="13" VerticalAlignment="Top" Margin="80,17,643,0" Height="32"/>
         </Border>
@@ -27,5 +32,12 @@
             <ListBoxItem>Category 3</ListBoxItem>
             <ListBoxItem>Category 4</ListBoxItem>
         </ListBox>
+        <chartingToolkit:Chart Margin="300,100,100,100" BorderBrush="{x:Null}" >
+            <chartingToolkit:PieSeries 
+                ItemsSource="{StaticResource CategorySummary}" 
+                IndependentValueBinding="{Binding Path=Name}" 
+                DependentValueBinding="{Binding Path=Share}" Margin="10,10,10.4,10" 
+                />
+        </chartingToolkit:Chart>
     </Grid>
 </Window>

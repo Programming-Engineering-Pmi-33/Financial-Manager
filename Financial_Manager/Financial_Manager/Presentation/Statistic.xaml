@@ -4,9 +4,13 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Financial_Manager"
+        xmlns:chartingToolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit"
         mc:Ignorable="d"
  Title="Login" Height="530" Width="867">
     <Grid Background="#FF7B7B87" Height="500">
+        <Grid.Resources>
+            <local:CategorySummary x:Key="CategorySummary" />
+        </Grid.Resources>
         <Border BorderBrush="Black" BorderThickness="0" Height="60" Width="867" Background="#FF404042" Margin="0" VerticalAlignment="Top" HorizontalAlignment="Left">
             <Label Content="Financial Accounting" FontWeight="Bold" FontSize="13" VerticalAlignment="Top" Margin="80,17,643,0" Height="32"/>
         </Border>
@@ -35,6 +39,14 @@
                 <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Amount" Width="110"/>
             </DataGrid.Columns>
         </DataGrid>
-
+        <chartingToolkit:Chart Margin="374,158,51.8,100" BorderBrush="{x:Null}" >
+            <chartingToolkit:Chart.Series>
+                <chartingToolkit:ColumnSeries 
+                ItemsSource="{StaticResource CategorySummary}" 
+                IndependentValueBinding="{Binding Path=Name}" 
+                DependentValueBinding="{Binding Path=Share}" Margin="10,10,10.4,10" 
+                />
+            </chartingToolkit:Chart.Series>
+        </chartingToolkit:Chart>
     </Grid>
 </Window>
