@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -28,6 +29,20 @@ namespace Financial_Manager
         private void CheckBox_Checked(object sender, RoutedEventArgs e)
         {
 
+        }
+        private void NumberValidationTextBox(object sender, TextCompositionEventArgs e)
+        {
+            string num = e.Text;
+            try
+            {
+                double n = Convert.ToDouble(num);
+                textBox1.Background = new SolidColorBrush(Colors.White);
+            }
+            catch(Exception ex)
+            {
+                textBox1.Background = new SolidColorBrush(Colors.Red);
+            }
+            
         }
     }
 }

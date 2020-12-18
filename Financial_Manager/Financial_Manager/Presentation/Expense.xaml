@@ -36,7 +36,7 @@
             <ListBoxItem>Category 3</ListBoxItem>
             <ListBoxItem>Add new category</ListBoxItem>
         </ListBox>
-        <TextBox HorizontalAlignment="Left" Height="27" Margin="333,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="101" FontSize="13" VerticalContentAlignment="Center"/>
+        <TextBox Name="textBox1" PreviewTextInput="NumberValidationTextBox" HorizontalAlignment="Left" Height="27" Margin="333,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="101" FontSize="13" VerticalContentAlignment="Center"/>
         <TextBlock HorizontalAlignment="Left" Margin="264,255,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Width="436" Height="32"><Run Text="Choose the type of "/><Run Text="expense:"/></TextBlock>
         <RadioButton GroupName="PaymentType" Content="One time payment" IsChecked="True" Margin="350,300,0,0" HorizontalAlignment="Left" Width="154" Height="19" VerticalAlignment="Top" RenderTransformOrigin="0.638,6.302"/>
         <RadioButton GroupName="PaymentType" Content="Repeat every week" Margin="352,324,240,157"/>
